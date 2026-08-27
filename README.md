@@ -3,6 +3,12 @@ XGBoost-Based optimizer for catalyst compositions developed during TEEP exchange
 
 Instructions:
 
+For this software, the target and training variables must be named in config and the run code. Additionally, the order of interaction terms must be adjusted to match the number of components there are to interact.
+
+An update is coming to make these adjustments easier, as well as include the hyperparameter optimzing loop.
+
+A venv must be created, with config and ML_simplePipeline in said venv, and ML_paper_data_HE available in the same folder as the venv. The code can then be run to demonstrate how the current method works.
+
 Literature Behind Work:
 
 “Machine Learning” was first coined as a term by Arthur Samuel in 1959, who created a checkers-playing algorithm that learned experientially. This idea of machines learning by experience is the core behind machine learning, as described by Zhou: “develop[ing] learning algorithms that build models from data.” [1] Machine learning as a field grew out of the artificial intelligence studies of the 1950s to 1970s. The main pursuit at the time was developing a machine that could use logical reasoning in the hopes that this would produce Artificial Intelligence. Notably, in his “Turing Test” paper, Turing recognized the necessity of experiential learning for this goal to be realized. In the 1970s, Feigenbaum led the rest of the field to begin to recognize this, and research shifted towards learning methods. In the 1980s, learning methods grew, became more characterized, and were explored in depth, and the favorite, learning by example, emerged. The main method in learning by example is symbolism, using decision trees and logic to build a model. Symbolism importantly continues the lineage of logic and knowledge methods from the history of artificial intelligence development, which is reflected in its continued presence in machine learning. More recently emerging approaches include statistical learning and a new method of connectionism, deep learning. However, neither applies to the XGBoost approach being taken.
